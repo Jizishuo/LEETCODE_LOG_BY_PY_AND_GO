@@ -31,4 +31,5 @@ func gcd(a, b int) int {
 func main() {
 	aaa := gcd(6, 12)
 	fmt.Println(aaa)
+	
 }
