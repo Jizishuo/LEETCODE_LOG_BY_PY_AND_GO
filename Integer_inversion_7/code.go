@@ -1,4 +1,4 @@
-package Integer_inversion_7
+package main
 
 import "fmt"
 
@@ -15,5 +15,5 @@ func rev(x int) int {
 }
 
 func main () {
-	fmt.Printf(123)
+	fmt.Print(12%10)
 }
