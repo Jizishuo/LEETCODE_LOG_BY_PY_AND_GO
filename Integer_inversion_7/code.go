@@ -1,0 +1,19 @@
+package Integer_inversion_7
+
+import "fmt"
+
+func rev(x int) int {
+	y := 0
+	for x!=0 {
+		y = y*10 + x%10
+		if !( -(1<<31) <= y && y <= (1<<31)-1) {
+			return 0
+		}
+		x /= 10
+	}
+	return y
+}
+
+func main () {
+	fmt.Printf(123)
+}
