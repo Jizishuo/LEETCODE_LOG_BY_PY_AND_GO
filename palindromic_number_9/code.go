@@ -3,7 +3,7 @@ package palindromic_number_9
 func isPalindrome(x int) bool {
 	s := fmt.Sprintf("%v", x)
 	if len(s)<=1 {
-		return false
+		return true
 	}
 	i:=0
 	j:=len(s)-1
