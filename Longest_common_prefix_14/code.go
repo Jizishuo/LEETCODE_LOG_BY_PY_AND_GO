@@ -1,17 +1,40 @@
 package Longest_common_prefix_14
 
 func longestCommonPrefix(strs []string) string {
-	if len(strs) == 0{
+	if len(strs) == 0 {
 		return ""
 	}
-	res := ""
-	for i:=0;i<len(strs[0]);i++{
-		for j:=1;j<len(strs);j++{
-			if len(strs[j])<i || strs[j][i] != strs[0][i] {
-				return res
+
+	prefixMap := make(map[int]string)
+
+	firstStr := strs[0]
+	for index := 0; index < len(firstStr); index++ {
+		s := string(firstStr[index])
+		prefixMap[index] = s
+	}
+
+	prefixNum := len(firstStr)
+	for i := 1; i < len(strs); i++ {
+		str := strs[i]
+		num := 0
+		for j := 0; j < len(str); j++ {
+			s := string(str[j])
+			if prefixMap[j] == s {
+				num++
+			}else{
+				break
 			}
 		}
-		res += strs[0][:i+1]
+		if num == 0{
+			return ""
+		}
+		if num < prefixNum {
+			prefixNum = num
+		}
 	}
-	return res
+	retStr := ""
+	for i := 0;  i < prefixNum; i++ {
+		retStr += prefixMap[i]
+	}
+	return retStr
 }
