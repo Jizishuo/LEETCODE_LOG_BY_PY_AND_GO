@@ -12,7 +12,7 @@ func search(s string, time int) bool {
 			if time == 0 {
 				return false
 			}
-			return search(s[begin:end], time-1) && search(s[begin+1:end+1], time-1)
+			return search(s[begin:end], time-1) || search(s[begin+1:end+1], time-1)
 
 		}
 		begin ++
