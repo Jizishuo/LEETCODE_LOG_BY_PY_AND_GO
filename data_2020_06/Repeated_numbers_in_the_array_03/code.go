@@ -1,9 +1,5 @@
 package Repeated_numbers_in_the_array_03
 
-import (
-	"sort"
-)
-
 func findRepeatNumber(nums []int) int {
 	for i, v := range nums {
 		if i == v {
