@@ -41,6 +41,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RunManager" selected="Go Test.BenchmarkPipelineSimple in hi_test.go (1)">
     <configuration name="BenchmarkPipelineSimple in hi_test.go (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -112,26 +114,33 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
     <state x="561" y="342" key="#GOROOT" timestamp="1591885129129">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="561" y="342" key="#GOROOT/0.0.1536.824@0.0.1536.824" timestamp="1591885129129" />
-    <state width="746" height="93" key="GridCell.Tab.0.bottom" timestamp="1591924757067">
+    <state width="746" height="271" key="GridCell.Tab.0.bottom" timestamp="1592711116686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="93" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591924757067" />
-    <state width="746" height="93" key="GridCell.Tab.0.center" timestamp="1591924757067">
+    <state width="746" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592711116686" />
+    <state width="746" height="271" key="GridCell.Tab.0.center" timestamp="1592711116686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="93" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591924757067" />
-    <state width="746" height="93" key="GridCell.Tab.0.left" timestamp="1591924757067">
+    <state width="746" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592711116686" />
+    <state width="746" height="271" key="GridCell.Tab.0.left" timestamp="1592711116685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="93" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591924757067" />
-    <state width="746" height="93" key="GridCell.Tab.0.right" timestamp="1591924757067">
+    <state width="746" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592711116685" />
+    <state width="746" height="271" key="GridCell.Tab.0.right" timestamp="1592711116686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="93" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591924757067" />
+    <state width="746" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592711116686" />
+    <state x="270" y="56" key="SettingsEditor" timestamp="1592710060872">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592710060872" />
   </component>
 </project>
