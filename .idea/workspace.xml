@@ -42,7 +42,17 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
-  <component name="RunManager" selected="Go Test.BenchmarkPipelineSimple in hi_test.go">
+  <component name="RunManager" selected="Go Test.BenchmarkPipelineSimple in hi_test.go (1)">
+    <configuration name="BenchmarkPipelineSimple in hi_test.go (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="LEETCODE_LOG_BY_PY_AND_GO" />
+      <working_directory value="$PROJECT_DIR$/test_code/buffer_size_2" />
+      <framework value="gobench" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/test_code/buffer_size_2/hi_test.go" />
+      <pattern value="^BenchmarkPipelineSimple$" />
+      <method v="2" />
+    </configuration>
     <configuration name="BenchmarkPipelineSimple in hi_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="LEETCODE_LOG_BY_PY_AND_GO" />
       <working_directory value="$PROJECT_DIR$/test_code/buffer_size_2" />
@@ -77,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.BenchmarkPipelineSimple in hi_test.go (1)" />
         <item itemvalue="Go Test.BenchmarkPipelineSimple in hi_test.go" />
       </list>
     </recent_temporary>
