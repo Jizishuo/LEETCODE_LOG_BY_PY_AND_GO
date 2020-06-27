@@ -1,3 +1,24 @@
+
+// channel的4个特性的实现：
+// channel的goroutine安全，是通过mutex实现的。
+// channel的FIFO，是通过循环队列实现的。
+// channel的通信：在goroutine间传递数据，是通过仅共享hchan+数据拷贝实现的。
+// channel的阻塞是通过goroutine自己挂起，唤醒goroutine是通过对方goroutine唤醒实现的。
+// channel的其他实现：
+//
+// 1, 发送goroutine是可以访问接收goroutine的内存空间的，接收goroutine也是可以直接访问发送goroutine的内存空间的，看sendDirect、recvDirect函数。
+// 2,无缓冲的channel始终都是直接访问对方goroutine内存的方式，把手伸到别人的内存，把数据放到接收变量的内存，或者从发送goroutine的内存拷贝到自己内存。
+//    省掉了对方再加锁获取数据的过程。
+// 3, 接收goroutine读不到数据和发送goroutine无法写入数据时，是把自己挂起的，这就是channel的阻塞操作。阻塞的接收goroutine是由发送goroutine唤醒的，
+//    阻塞的发送goroutine是由接收goroutine唤醒的，看gopark、goready函数在chan.go中的调用。
+// 4, 接收goroutine当channel关闭时，读channel会得到0值，并不是channel保存了0值，而是它发现channel关闭了，把接收数据的变量的值设置为0值。
+// 5, channel的操作/调用，是通过reflect实现的，可以看reflect包的makechan, chansend, chanrecv函数。
+// 6, channel关闭时，所有在channel上读数据的g都会收到通知。其实并非关闭channel的g给每个接收的g发送信号，而是关闭channel的g，把channel关闭后，
+//    会唤醒每一个读取channel的g，它们发现channel关闭了，把待读的数据设置为零值并返回，所以这并非一次性的事件通知，
+//   。看到这种本质，你应当理解下面这种奇淫巧计：这种“通知”效果并不一定需要接收数据的g先启动，先把channel关闭了，
+//    然后启动读取channel的g依然是可行的，代码无需任何改变，任何逻辑也都无需改变，它会发现channel关闭了，然后走原来的逻辑。
+
+
 // Copyright 2014 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
