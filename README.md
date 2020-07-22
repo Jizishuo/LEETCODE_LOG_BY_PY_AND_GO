@@ -1,3 +1,5 @@
-###a daily record
+# leetcode
 
-new
+![图片名称](OIP.jpg) 
+
+### my test..
