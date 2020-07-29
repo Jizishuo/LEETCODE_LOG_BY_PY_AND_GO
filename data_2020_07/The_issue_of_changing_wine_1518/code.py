@@ -6,3 +6,4 @@ class Solution:
             res += numBottles//numExchange
             numBottles=numBottles%numExchange+numBottles//numExchange
         return res
+
