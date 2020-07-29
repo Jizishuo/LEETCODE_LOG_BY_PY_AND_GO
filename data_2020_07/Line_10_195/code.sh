@@ -4,7 +4,6 @@ sed -n '10p' file.txt
 
 awk '{if(NR==10){PRINT $0}}' file.txt
 
-
 row_num=$(cat file.txt|wc -l)
 echo $row_num
 if [ $row_num -lt 10 ];then
