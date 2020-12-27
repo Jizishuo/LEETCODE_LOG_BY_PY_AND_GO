@@ -14,6 +14,6 @@ class Solution:
                 if num[i]:
                     ret.append(chr(i + ord('a')))
                     num[i] -= 1
-
+  
         return "".join(ret)
 
