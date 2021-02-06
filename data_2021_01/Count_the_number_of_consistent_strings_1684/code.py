@@ -7,4 +7,3 @@ class Solution:
             if al >= wl:
                 res +=1
         return res
-    
